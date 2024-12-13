@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Queen Philip",
+    "version": "1.0",
+    "description": "replace linkedin queens icon with pilip",
+    "permissions": ["scripting", "activeTab"],
+    "host_permissions": ["https://*.linkedin.com/*"],
+    "content_scripts": [
+        {
+          "matches": ["https://*.linkedin.com/*"], 
+          "js": ["content.js"]
+        }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "philipliu.png"
+    },
+    "web_accessible_resources": [
+    {
+      "resources": ["pilip.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+  
